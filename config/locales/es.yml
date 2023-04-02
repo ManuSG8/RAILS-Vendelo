@@ -1,0 +1,73 @@
+es:
+  app_name: 'Vendelo'
+  meta_title: 'Compra y vende productos de segunda mano!'
+
+  activerecord: # Para modificar los campos del formulario
+    models:
+      product: Producto
+    attributes:
+      product:
+        title: 'Titulo'
+        description: 'Descripcion'
+        price: 'Precio'
+        category: 'Categoria'
+        photo: 'Foto'
+    errors:
+      models:
+        product:
+          attributes:
+            title:
+              blank: 'no puede estar vacio'
+            description:
+              blank: 'no puede estar vacia'
+            price:
+              blank: 'no puede estar vacio'
+            category:
+              blank: 'no puede estar vacio'
+
+  common:
+    confirm: 'Estas seguro?'
+    back: 'Volver atras'
+  shared:
+    header:
+      add: 'Anhadir Producto'
+      categories: 'Categorias'
+
+  products:
+    edit:
+      title: 'Editar Producto'
+    new:
+      title: 'Anhadir Producto'
+    index:
+      title: 'Productos'
+      all: 'Todos'
+      query_text: 'Que quieres buscar?'
+      min_price: 'Precio minimo'
+      max_price: 'Precio maximo'
+      newest: 'Recientes'
+      expensive: 'Mas caros'
+      cheapest: 'Mas baratos'
+    create:
+      created: 'Tu producto se ha creado correctamente'
+    update:
+      updated: 'Tu producto se ha actualizado correctamente'
+    destroy:
+      destroyed: 'Tu producto se ha eliminado correctamente'
+
+  categories:
+    category:
+      edit: 'Editar'
+      delete: 'Eliminar'
+    index:
+      title: 'Categorias'
+      new: 'Anhadir Categoria'
+    edit:
+      title: 'Editar Categoria'
+    new:
+      title: 'Nueva Categoria'
+    create:
+      created: 'Tu categoria se ha creado correctamente'
+    update:
+      updated: 'Tu categoria se ha actualizado correctamente'
+    destroy:
+      destroyed: 'Tu categoria se ha eliminado correctamente'

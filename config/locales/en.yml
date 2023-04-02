@@ -1,0 +1,73 @@
+en:
+  app_name: 'SellIT'
+  meta_title: 'Buy and sell second hand products!'
+
+  activerecord: # Para modificar los campos del formulario
+    models:
+      product: Product
+    attributes:
+      product:
+        title: 'Title'
+        description: 'Description'
+        price: 'Price'
+        category: 'Category'
+        photo: 'Photo'
+    errors:
+      models:
+        product:
+          attributes:
+            title:
+              blank: 'can"t be blank'
+            description:
+              blank: 'can"t be blank'
+            price:
+              blank: 'can"t be blank'
+            category:
+              blank: 'can"t be blank'
+
+  common:
+    confirm: 'Are you sure?'
+    back: 'Go back'
+  shared:
+    header:
+      add: 'Add Product'
+      categories: 'Categories'
+
+  products:
+    edit:
+      title: 'Edit Product'
+    new:
+      title: 'Add Product'
+    index:
+      title: 'Products'
+      all: 'All'
+      query_text: 'What do you want to search?'
+      min_price: 'Min price'
+      max_price: 'Max price'
+      newest: 'Newest'
+      expensive: 'Expensive'
+      cheapest: 'Cheapest'
+    create:
+      created: 'Your product has been succesfully created'
+    update:
+      updated: 'Your product has been succesfully updated'
+    destroy:
+      destroyed: 'Your product has been succesfully deleted'
+
+  categories:
+    category:
+      edit: 'Edit'
+      delete: 'Delete'
+    index:
+      title: 'Categories'
+      new: 'Add Category'
+    edit:
+      title: 'Edit Category'
+    new:
+      title: 'New Category'
+    create:
+      created: 'Your category has been succesfully created'
+    update:
+      updated: 'Your category has been succesfully updated'
+    destroy:
+      destroyed: 'Your category has been succesfully deleted'
